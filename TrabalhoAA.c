@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<math.h>
 #include<time.h>
-#include<conio.h>
 #define n 16
 
 
