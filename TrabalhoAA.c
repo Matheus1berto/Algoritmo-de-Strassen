@@ -8,11 +8,11 @@
 //GRUPO
 //ALUNO: MATHEUS HUMBERTO G. F. COSTA
 //MATRICULA: 11811BCC006
-//ALUNO : JOÃO ANTÔNIO NARDINI ROMANIELLO
+//ALUNO : JOÃƒO ANTÃ”NIO NARDINI ROMANIELLO
 //MATRICULA : 11811BCC028
 
-//O TAMANHO DA MATRIZ PODE SER MODIFICADO ATRAVÉS DO DEFINE INCLUSO NO TOPO DO PROGRAMA
-//PARA TER UMA VISUALIZAÇÃO MELHOR DE CADA MATRIZ BASTA TIRAR OS COMENTARIOS NOS CÓDIGOS FORNECIDOS
+//O TAMANHO DA MATRIZ PODE SER MODIFICADO ATRAVÃ‰S DO DEFINE INCLUSO NO TOPO DO PROGRAMA
+//PARA TER UMA VISUALIZAÃ‡ÃƒO MELHOR DE CADA MATRIZ BASTA TIRAR OS COMENTARIOS NOS CÃ“DIGOS FORNECIDOS
 
  static int matX[n][n]; //Matriz 1
  static int matY[n][n];  //Matriz 2
@@ -21,18 +21,18 @@
 
  int AlgStrassen(int *A, int *B, int *C, int m, int n1){
     if(m==2){
-        int P1=(*A+*(A+n1+1))*(*B+*(B+n1+1));  //P=(A[0][0]+A[1][1])*(B[0][0]+B[1][1])
-        int P2=(*(A+n1)+*(A+n1+1))*(*B);   //Q=(A[1][0]+A[1][1])*B[0][0]
-        int P3=(*A)*(*(B+1)-*(B+n1+1));   //R=A[0][0]*(B[0][1]-B[1][1])
-        int P4=(*(A+n1+1))*(*(B+n1)-*B);   //S=A[1][1]*(B[1][0]-B[0][0])
-        int P5=(*A+*(A+1))*(*(B+n1+1));   //T=(A[0][0]+A[0][1])*B[1][1]
-        int P6=(*(A+n1)-*A)*(*B+*(B+1));  //U=(A[1][0]-A[0][0])*(B[0][0]+B[0][1])
-        int P7=(*(A+1)-*(A+n1+1))*(*(B+n1)+*(B+n1+1));  //V=(A[0][1]-A[1][1])*(B[1][0]+B[1][1]);
+        int P1=(*A+*(A+n1+1))*(*B+*(B+n1+1));  
+        int P2=(*(A+n1)+*(A+n1+1))*(*B);   
+        int P3=(*A)*(*(B+1)-*(B+n1+1));   
+        int P4=(*(A+n1+1))*(*(B+n1)-*B);   
+        int P5=(*A+*(A+1))*(*(B+n1+1));   
+        int P6=(*(A+n1)-*A)*(*B+*(B+1));  
+        int P7=(*(A+1)-*(A+n1+1))*(*(B+n1)+*(B+n1+1));  
 
-        *C=*C+P1+P4-P5+P7;  //C[0][0]=P+S-T+V
-        *(C+1)=*(C+1)+P3+P5;  //C[0][1]=R+T
-        *(C+n1)=*(C+n1)+P2+P4;  //C[1][0]=Q+S
-        *(C+n1+1)=*(C+n1+1)+P1+P3-P2+P6;  //C[1][1]=P+R-Q+U
+        *C=*C+P1+P4-P5+P7;  
+        *(C+1)=*(C+1)+P3+P5;  
+        *(C+n1)=*(C+n1)+P2+P4;  
+        *(C+n1+1)=*(C+n1+1)+P1+P3-P2+P6;  
     }
     else{
         m=m/2;
@@ -74,7 +74,7 @@ int alg1(int vet1[n][n],int vet2[n][n]) {
          int k = 0;
          for(i=0;i<n;i++){
             for(j=0;j<n;j++){
-                vet3[i][j] = 0; //ZERA TODAS AS POSIÇÕES DA MATRIZ
+                vet3[i][j] = 0; //ZERA TODAS AS POSIÃ‡Ã•ES DA MATRIZ
             }
          }
 
@@ -124,7 +124,7 @@ for(i=0;i<n;i++){
 
 int main(){
 
-//O tamanho da matriz é indicado pela variavel n no #Define
+//O tamanho da matriz Ã© indicado pela variavel n no #Define
 
 int i = 0;
 int j = 0;
